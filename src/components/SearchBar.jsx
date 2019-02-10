@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import FormControl from 'react-bootstrap/FormControl';
+import Button from 'react-bootstrap/Button';
 
 class SearchBar extends Component {
   render() {
     return (
-      <Form>
-        <Form.Control size="lg" type="text" placeholder="Find Recipes" />
-      </Form>
+      <InputGroup>
+        <FormControl size="lg" type="text" placeholder="Find Recipes" />
+        <InputGroup.Append>
+          <Button variant="outline-secondary">Search</Button>
+        </InputGroup.Append>
+      </InputGroup>
     );
   }
 }
