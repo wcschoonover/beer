@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# [Beer App](https://wcschoonover.github.io/beer/public) [![Build Status](https://travis-ci.com/wcschoonover/beer.svg?branch=master)](https://travis-ci.com/wcschoonover/beer) [![Coverage Status](https://coveralls.io/repos/github/wcschoonover/beer/badge.svg?branch=master)](https://coveralls.io/github/wcschoonover/beer?branch=master)
+# [Beer App](https://wcschoonover.github.io/beer/public) [![Build Status](https://travis-ci.com/wcschoonover/beer.svg?branch=master)](https://travis-ci.com/wcschoonover/beer)
 ### Note:
 Using yarn as 'npm start' currently encounters issues, somewhat outlined by issue [#6385](https://github.com/facebook/create-react-app/issues/6385).
 
