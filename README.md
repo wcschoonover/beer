@@ -1,12 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Beer App
+# Beer App [![Build Status](https://travis-ci.com/wcschoonover/beer.svg?branch=master)](https://travis-ci.com/wcschoonover/beer) [![Coverage Status](https://coveralls.io/repos/github/wcschoonover/beer/badge.svg?branch=master)](https://coveralls.io/github/wcschoonover/beer?branch=master)
 ### Note:
 Using yarn as 'npm start' currently encounters issues, somewhat outlined by issue [#6385](https://github.com/facebook/create-react-app/issues/6385).
 
 This app uses the following libraries in addition to those supplied by create-react-app:
 * Bootstrap
 * React-Bootstrap
+
+This app uses Travis-CI for continuous integration on GitHub.
 
 ## Available Scripts
 
