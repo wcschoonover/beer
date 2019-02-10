@@ -26,5 +26,8 @@
   ],
   "resolutions": {
     "ajv": "6.8.1"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.2"
   }
 }

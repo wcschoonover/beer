@@ -8,6 +8,8 @@ This app uses the following libraries in addition to those supplied by create-re
 * Bootstrap
 * React-Bootstrap
 
+This app uses Travis-CI for continuous integration on GitHub.
+
 ## Available Scripts
 
 In the project directory, you can run:
