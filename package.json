@@ -32,9 +32,6 @@
   "resolutions": {
     "ajv": "6.8.1"
   },
-  "jest": {
-    "coveragePathIgnorePatterns": ["/node_modules/", "/src/*.js"]
-  },
   "devDependencies": {
     "coveralls": "^3.0.2",
     "gh-pages": "^2.0.1"
