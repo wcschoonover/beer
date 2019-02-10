@@ -17,7 +17,7 @@
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
     "deploy": " gh-pages -d build",
-    "coverage": "react-scripts test --env=jsdom --coverage --collectCoverageFrom=!src/serviceWorker.js --collectCoverageFrom=!src/index.js",
+    "coverage": "react-scripts test --env=jsdom --coverage",
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "eslintConfig": {
@@ -31,6 +31,9 @@
   ],
   "resolutions": {
     "ajv": "6.8.1"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": ["/node_modules/", "/src/*.js"]
   },
   "devDependencies": {
     "coveralls": "^3.0.2",
