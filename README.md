@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-#Beer App
+# Beer App
 ### Note:
 Using yarn as 'npm start' currently encounters issues, somewhat outlined by issue [#6385](https://github.com/facebook/create-react-app/issues/6385).
 
