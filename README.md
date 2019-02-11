@@ -5,12 +5,42 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Using yarn as 'npm start' currently encounters issues, somewhat outlined by issue [#6385](https://github.com/facebook/create-react-app/issues/6385).
 
 ### Server Implementation Expectations
-Server is expected to be a RESTful API using JSON with an implemented database.
+Server is expected to be a RESTful API using JSON with an implemented database, and be connected to Auth0 for authentication.
 Available API calls expected are:
 * Get
 * Post
 * Put
 * Delete
+
+Endpoints needed from the server:
+* Get
+  * User
+  * User recipes
+  * Trending recipes
+  * Recipe search autofill
+  * Recipe search results
+  * Ingredient search autofill
+* Put
+  * New recipe
+* Post
+  * Edit recipe
+  * Edit user information
+* Delete
+  * User
+  * Recipe
+  
+User object is currently not defined.
+Recipe object is defined as such:
+recipe: {
+  name: "",
+  ingredients: [{
+      ingredientName: "",
+      amount: ""
+    }],
+  instructions: ""
+}
+
+Ability to add images to users, recipes, and ingredients in future update.
 
 ### App Details
 This app uses the following libraries in addition to those supplied by create-react-app:
@@ -19,6 +49,7 @@ This app uses the following libraries in addition to those supplied by create-re
 * Axios - API calls.
 * History - Track appropriate url history.
 * React Router - Route users based on URL.
+* Auth0 - Secure signup and login.
 
 This app uses Travis-CI for continuous integration on GitHub, with Coveralls for code completion stats.
 
