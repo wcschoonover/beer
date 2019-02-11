@@ -24,9 +24,9 @@ class Auth extends Component {
     this.auth0.parseHash((error, authResult) => {
       if (authResult && authResult.accessToken) {
         this.setSession(authResult);
-        history.replace('/home');
+        history.replace('/home/user');
       } else if (error) {
-        history.replace('/');
+        history.replace('/home');
         console.log(error);
       }
     });
