@@ -17,7 +17,7 @@ class Home extends Component {
 
   handleInputChange(e) {
     this.setState({
-      query: e.value
+      query: e.target.value
     });
   }
 

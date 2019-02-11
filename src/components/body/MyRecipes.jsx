@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import ListGroup from 'react-bootstrap/ListGroup';
+import AddRecipeButton from '../AddRecipeButton';
 
 class MyRecipes extends Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class MyRecipes extends Component {
               <Nav.Item>
                 <Nav.Link href="/home/myrecipes">My Recipes</Nav.Link>
               </Nav.Item>
-              <Button variant="success" className="ml-auto" style={{marginTop:'-6px'}}>Add</Button>
+              <AddRecipeButton className="ml-auto" style={{ marginTop: '-6px' }} {...this.props}/>
             </Nav>
           </Card.Title>
           <ListGroup>

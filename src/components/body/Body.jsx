@@ -14,7 +14,7 @@ class Body extends Component {
           <Trending />
         </Col>
         <Col xs={12} sm={6} md={6} lg={4}>
-          <MyRecipes />
+          <MyRecipes {...this.props}/>
         </Col>
       </Row>
     }
