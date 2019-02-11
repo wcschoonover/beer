@@ -1,12 +1,24 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # [Beer App](https://wcschoonover.github.io/beer/public) [![Build Status](https://travis-ci.com/wcschoonover/beer.svg?branch=master)](https://travis-ci.com/wcschoonover/beer) [![Coverage Status](https://coveralls.io/repos/github/wcschoonover/beer/badge.svg?branch=master&kill_cache=1)](https://coveralls.io/github/wcschoonover/beer?branch=master&kill_cache=1)
-### Note:
+#### Note:
 Using yarn as 'npm start' currently encounters issues, somewhat outlined by issue [#6385](https://github.com/facebook/create-react-app/issues/6385).
 
+### Server Implementation Expectations
+Server is expected to be a RESTful API using JSON with an implemented database.
+Available API calls expected are:
+* Get
+* Post
+* Put
+* Delete
+
+### App Details
 This app uses the following libraries in addition to those supplied by create-react-app:
-* Bootstrap
-* React-Bootstrap
+* Bootstrap - Rather than using CDN.
+* React-Bootstrap - Easier UI layout implementation.
+* Axios - API calls.
+* History - Track appropriate url history.
+* React Router - Route users based on URL.
 
 This app uses Travis-CI for continuous integration on GitHub, with Coveralls for code completion stats.
 
