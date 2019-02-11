@@ -10,10 +10,10 @@ class Body extends Component {
     if (this.props.auth.isAuthenticated()) {
       layout = 
       <Row>
-        <Col xs={8}>
+        <Col xs={12} sm={6} md={6} lg={8}>
           <Trending />
         </Col>
-        <Col xs={4}>
+        <Col xs={12} sm={6} md={6} lg={4}>
           <MyRecipes />
         </Col>
       </Row>
