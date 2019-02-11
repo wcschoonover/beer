@@ -30,14 +30,23 @@ Endpoints needed from the server:
   * Recipe
   
 User object is currently not defined.
+
 Recipe object is defined as such:
+
 recipe: {
+
   name: "",
+  
   ingredients: [{
+  
       ingredientName: "",
+      
       amount: ""
+      
     }],
+    
   instructions: ""
+  
 }
 
 Ability to add images to users, recipes, and ingredients in future update.
