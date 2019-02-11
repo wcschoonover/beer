@@ -15,7 +15,7 @@ class App extends Component {
         }
         {
           isAuthenticated() && isRoot && (
-            <Redirect to={{ pathname: `/home/user`, state: { from: this.props.location } }} />
+            <Redirect to={{ pathname: `/home`, state: { from: this.props.location } }} />
           )
         }
       </div>
