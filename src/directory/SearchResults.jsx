@@ -9,6 +9,12 @@ class SearchResults extends Component {
     }
   }
 
+  componentDidMount() {
+    this.setState({
+      results: []
+    });
+  }
+
   render() {
     return(
       <div>
