@@ -14,18 +14,17 @@ const handleAuthentication = (nextState, replace) => {
   }
 }
 
-function PrivateRoute({ component: Component, ...rest }) {
-  return (
-    <Route
-      {...rest}
-      render={(props) => (
-        auth.isAuthenticated()
-          ? <Component auth={auth} {...props} />
-          : <Redirect to='/home' />
-      )} />
-  );
-
-}
+// function PrivateRoute({ component: Component, ...rest }) {
+//   return (
+//     <Route
+//       {...rest}
+//       render={(props) => (
+//         auth.isAuthenticated()
+//           ? <Component auth={auth} {...props} />
+//           : <Redirect to='/home' />
+//       )} />
+//   );
+// }
 
 export const makeMainRoutes = () => {
   return (
