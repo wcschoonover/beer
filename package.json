@@ -4,6 +4,7 @@
   "homepage": "https://wcschoonover.github.io/beer/public",
   "private": true,
   "dependencies": {
+    "auth0-js": "^9.10.0",
     "axios": "^0.18.0",
     "bootstrap": "^4.2.1",
     "history": "^4.7.2",
