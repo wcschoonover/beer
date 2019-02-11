@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
+import LoginControl from './LoginControl';
 
 class Header extends Component {
   render() {
@@ -11,7 +11,7 @@ class Header extends Component {
           {' Beer App '}
         </Navbar.Brand>
         <Nav className="ml-auto">
-          <Button variant="light">Sign In</Button>
+          <LoginControl {...this.props}/>
         </Nav>
       </Navbar>
     );

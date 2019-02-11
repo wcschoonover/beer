@@ -1,26 +1,23 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import SearchBar from './components/SearchBar';
-import Header from './components/header/Header';
-import Body from './components/body/Body';
+import { Redirect } from 'react-router-dom';
 
 class App extends Component {
   render() {
+    const { isAuthenticated } = this.props.auth;
+    const isRoot = this.props.location.pathname === '/';
+
     return (
       <div className="App">
-        <Header />
-        <br />
-        <Container>
-          <Row>
-            <Col xs={12}>
-              <SearchBar />
-            </Col>
-          </Row>
-          <br />
-          <Body />
-        </Container>
+        {
+          !isAuthenticated() && isRoot && (
+            <Redirect to={{ pathname: '/home', state: { from: this.props.location } }} />
+          )
+        }
+        {
+          isAuthenticated() && isRoot && (
+            <Redirect to={{ pathname: `/home/user`, state: { from: this.props.location } }} />
+          )
+        }
       </div>
     );
   }
