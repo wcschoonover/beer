@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Router } from 'react-router-dom';
 import App from './App';
-import Home from './directory/Home'
 import Callback from './auth/Callback';
 import Auth from './auth/Auth';
 import history from './history/history';
+import Home from './directory/Home';
 
 const auth = new Auth();
 
@@ -13,18 +13,6 @@ const handleAuthentication = (nextState, replace) => {
     auth.handleAuthentication();
   }
 }
-
-// function PrivateRoute({ component: Component, ...rest }) {
-//   return (
-//     <Route
-//       {...rest}
-//       render={(props) => (
-//         auth.isAuthenticated()
-//           ? <Component auth={auth} {...props} />
-//           : <Redirect to='/home' />
-//       )} />
-//   );
-// }
 
 export const makeMainRoutes = () => {
   return (
