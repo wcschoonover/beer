@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
-import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import AddRecipeButton from '../components/AddRecipeButton';
 
 class UserRecipes extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class UserRecipes extends Component {
             <h1>My Saved Recipes</h1>
           </Col>
           <Col xs={6}>
-            <Button variant="success" style={{marginTop:'6px', float:'right'}}>Add</Button>
+            <AddRecipeButton style={{ marginTop: '6px', float: 'right' }} {...this.props}/>
           </Col>
         </Row>
         <ListGroup>
