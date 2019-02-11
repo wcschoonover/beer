@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Router, Redirect } from 'react-router-dom';
+import { Route, Router } from 'react-router-dom';
 import App from './App';
 import Home from './directory/Home'
 import Callback from './auth/Callback';
