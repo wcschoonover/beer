@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
+import Card from 'react-bootstrap/Card';
 
 class Trending extends Component {
   render() {
     return(
-      <div>
-        
-      </div>
+      <Card>
+        <Card.Body>
+          <Card.Title>Trending Recipes</Card.Title>
+        </Card.Body>
+      </Card>
     );
   }
 }

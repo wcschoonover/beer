@@ -18,6 +18,7 @@ class App extends Component {
               <SearchBar />
             </Col>
           </Row>
+          <br />
           <Body />
         </Container>
       </div>
