@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import SearchResults from './SearchResults';
 import Body from '../components/body/Body';
+import UserRecipes from './UserRecipes';
 
 
 class Main extends Component {
@@ -12,6 +13,7 @@ class Main extends Component {
         <Switch>
           <Route exact path={this.props.match.path} render={() => <Body {...this.props}/>} />
           <Route path={this.props.match.path + '/search'} render={() => <SearchResults {...this.props} />} />
+          <Route path={this.props.match.path + '/myrecipes'} render={() => <UserRecipes {...this.props} />} />
         </Switch>
       </div>
     );
